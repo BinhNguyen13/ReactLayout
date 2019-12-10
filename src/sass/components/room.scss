@@ -1,0 +1,130 @@
+.room {
+       
+    background-color: $primary-bg;
+    padding-top:100px;
+    h1 {
+        margin-top:0;
+    }
+    &__start__line {
+        float:right;
+        hr {
+            border:none;
+            background-color: $line;
+            width: 25px;
+            transform:skewY(45deg);
+            height: 5px;
+        }
+    }
+    &__deluxe {
+        background-color: #00000030;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-repeat: no-repeat;
+        background-image: url(../assets/imgs/deluxe.jpg);
+      
+        grid-area: deluxe;
+        
+    }
+    &__premium {
+        background-color: #00000030;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+       
+        background-image: url(../assets/imgs/premium.jpg);
+        grid-area: premium;
+    }
+    &__twin {
+        background-color: #00000030;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+        background-image: url(../assets/imgs/twin.jpg);
+        grid-area: twin;
+    }
+    &__special {
+        background-color: #00000030;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+        background-image: url(../assets/imgs/special.jpg);
+        grid-area: special;
+    }
+    &__single {
+        z-index: 2;
+        background-color: #00000030;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+        background-image: url(../assets/imgs/single.jpg);
+        grid-area: single;
+    }
+    
+    &__wrap {
+        p {
+            color:$primary-text;
+            margin-left:30px;
+            margin-bottom: 0;
+        }
+        h3 {
+            margin:15px 0 30px 30px;
+            color:$primary-text
+        }
+        div {
+            width:100%;
+            
+        }
+        display: grid;
+        gap:55px;
+        grid-template-areas: 'deluxe premium twin'
+                            'deluxe special single'
+        ;
+    }
+    
+    &__line {
+      
+        hr {
+            border:none;
+            background-color: $line;
+            width: 25px;
+            transform:skewY(45deg);
+            height: 5px;
+        }
+    }    
+    &__deluxe {
+        
+        height: 650px;
+        
+    }
+    &__premium {
+        height: 300px;
+        
+    }
+    &__twin {
+        height: 300px;
+    }
+    &__special {
+        height: 300px;
+    }
+    &__single {
+        height: 300px;
+    }
+    &__line {
+        grid-column: 3/4;
+    
+        position: relative;
+        top: -135px;
+        left: 227px;
+    }
+    &--margin{
+        margin:0 200px;
+    }
+    &__text__bg {
+        background-color:#00000050;
+    }
+}

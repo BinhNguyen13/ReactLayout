@@ -1,0 +1,38 @@
+.footer {
+    padding-top:145px;
+    background-color: $primary-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        margin-left :200px;
+        span {
+            color: $logo-dot;
+            font-size:30px;
+        }
+    }
+
+    &__nav {
+        margin-left:80px;
+        display: flex;
+        justify-content: center;
+        li {
+            margin-right:50px
+        }
+        li:last-child {
+            margin-right:0
+        }
+    }
+    &__icon {
+        img {
+            width:20px;
+            height: 20px;
+            margin-right:35px;
+        }
+        img:last-child {
+            margin-right:200px
+        }
+        
+        
+    }
+}

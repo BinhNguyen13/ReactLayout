@@ -1,0 +1,27 @@
+.subscribe{
+    background-color: $primary-bg;
+    &__text {
+        h1{
+            text-align: center;
+            font-size:60px;
+            margin-top:0
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        
+    }
+    &__form {
+        input {
+            width:600px;
+            padding:50px 50px;
+        }
+        button {
+            width: 200px;
+            background-color: $primary-btn;
+            color:$primary-text;
+            font-size:25px;
+        }
+    }
+}
